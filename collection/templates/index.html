@@ -4,6 +4,8 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Hello World</h1>
-    <p>{{ number }}</p>
+{% for meme in memes %}
+<h2>{{ meme.name }}</h2>
+<p>{{ meme.description }}</p>
+    {% endfor %}
 {% endblock content %}
