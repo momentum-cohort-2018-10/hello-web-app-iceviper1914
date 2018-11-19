@@ -4,8 +4,9 @@
 {% endblock title %}
 
 {% block content %}
-{% for meme in memes %}
-<h2>{{ meme.name }}</h2>
-<p>{{ meme.description }}</p>
+{% for cheese in cheeses %}
+<h2><a href="{% url 'cheese_detail' slug=cheese.slug %}">{{ cheese.name }}</a></h2>
+<p>{{ cheese.description }}</p>
+<img src= "{{ cheese.photo.url }}">
     {% endfor %}
 {% endblock content %}
