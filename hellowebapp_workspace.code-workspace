@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "hellowebpp"
+		},
+		{
+			"path": "collection"
+		},
+		{
+			"path": "collection/templates"
+		},
+		{
+			"path": "collection/static"
+		},
+		{
+			"path": "media"
+		}
+	],
+	"settings": {}
+}

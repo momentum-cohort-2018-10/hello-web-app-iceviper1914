@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ cheese.name }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ cheese.name }}</h1>
+    <p>{{ cheese.description }}</p>
+    <a href="{% url 'edit_cheese' slug=cheese.slug %}">
+        Edit me!
+    </a>
+{% endblock content %}
